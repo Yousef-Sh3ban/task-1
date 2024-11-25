@@ -16,11 +16,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      debugShowCheckedModeBanner: false,
         home: Scaffold(
-      backgroundColor: const Color(0xFFFEFCFF),
+      backgroundColor: const Color.fromARGB(240, 255, 255, 255),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFEFCFF),
         title: Row(
           children: [
             const Column(
@@ -33,27 +32,42 @@ class _MyAppState extends State<MyApp> {
                 Text(
                   "Follow up on your students in the nursery with ease",
                   style: TextStyle(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                       fontSize: 14,
                       color: Color(0xFF8B97A3)),
                 ),
               ],
             ),
+            const SizedBox(
+              width: 10,
+            ),
             Container(
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey),
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    border: Border.all(
+                        color: const Color.fromARGB(255, 219, 211, 211)),
                     borderRadius: BorderRadius.circular(90)),
                 width: 48,
                 height: 48,
                 child: const Icon(
-                  Icons.alarm,
+                  Icons.ac_unit_rounded,
                   color: Color(0xFF9D3ADF),
                 ))
           ],
         ),
-      ),floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add,color: Colors.white,),backgroundColor: Color(0xFF8344AD),),
-      body: SingleChildScrollView(child: Container(
-        padding: EdgeInsets.all(12),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        backgroundColor: const Color(0xFF8344AD),
+      ),
+      body: SingleChildScrollView(
+          child: Container(
+        color: const Color.fromARGB(80, 255, 255, 255),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             const Row(
@@ -80,7 +94,7 @@ class _MyAppState extends State<MyApp> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
@@ -91,23 +105,23 @@ class _MyAppState extends State<MyApp> {
                   width: 150,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+                      color: const Color.fromARGB(255, 255, 255, 255)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(129, 194, 188, 188),
+                            color: const Color.fromARGB(255, 255, 255, 255),
                             borderRadius: BorderRadius.circular(100),
                           ),
                           width: 40,
                           height: 40,
-                          child: Icon(
+                          child: const Icon(
                             Icons.person_2_outlined,
                             color: Color(0xFF8344AD),
                             size: 24,
                           )),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -125,14 +139,14 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.arrow_back_ios_new,
                         size: 15,
                       )
                     ],
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 Expanded(
@@ -140,24 +154,25 @@ class _MyAppState extends State<MyApp> {
                   height: 80,
                   width: 150,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+                    borderRadius: BorderRadius.circular(30),
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(129, 194, 188, 188),
+                            color: const Color.fromARGB(255, 255, 255, 255),
                             borderRadius: BorderRadius.circular(100),
                           ),
                           width: 40,
                           height: 40,
-                          child: Icon(
+                          child: const Icon(
                             Icons.chair_alt_rounded,
                             color: Color(0xFF8344AD),
                             size: 24,
                           )),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -175,7 +190,7 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.arrow_back_ios_new,
                         size: 15,
                       )
@@ -184,7 +199,7 @@ class _MyAppState extends State<MyApp> {
                 ))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
@@ -194,24 +209,25 @@ class _MyAppState extends State<MyApp> {
                   height: 80,
                   width: 150,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+                    borderRadius: BorderRadius.circular(30),
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(129, 194, 188, 188),
+                            color: const Color.fromARGB(255, 255, 255, 255),
                             borderRadius: BorderRadius.circular(100),
                           ),
                           width: 40,
                           height: 40,
-                          child: Icon(
+                          child: const Icon(
                             Icons.lock_clock_outlined,
                             color: Color(0xFF8344AD),
                             size: 24,
                           )),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -229,14 +245,14 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.arrow_back_ios_new,
                         size: 15,
                       )
                     ],
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 Expanded(
@@ -244,24 +260,25 @@ class _MyAppState extends State<MyApp> {
                   height: 80,
                   width: 150,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+                    borderRadius: BorderRadius.circular(30),
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(129, 194, 188, 188),
+                            color: const Color.fromARGB(255, 255, 255, 255),
                             borderRadius: BorderRadius.circular(100),
                           ),
                           width: 40,
                           height: 40,
-                          child: Icon(
+                          child: const Icon(
                             Icons.calendar_month,
                             color: Color(0xFF8344AD),
                             size: 24,
                           )),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -279,7 +296,7 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.arrow_back_ios_new,
                         size: 15,
                       )
@@ -289,16 +306,18 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
             Container(
-                margin: EdgeInsets.only(top: 15, bottom: 15),
+                margin: const EdgeInsets.only(top: 15, bottom: 15),
                 alignment: Alignment.centerLeft,
-                child: Text(
+                child: const Text(
                   "Nursery publications👀",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
                 )),
             Container(
-               decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: const Color.fromARGB(255, 255, 255, 255),
+              ),
               child: Column(
                 children: [
                   Row(
@@ -307,35 +326,67 @@ class _MyAppState extends State<MyApp> {
                         width: 46,
                         height: 46,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            border: Border.all(color: Colors.white,width: 3)),
-                            child: Image.network("https://s3-alpha-sig.figma.com/img/277c/3b91/3d752ff5fbbd893dbe4a3ce5d7e55015?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p2a7oNiidqwibYecb6UBxkTTZw54fe0guv~vWoFk8hFgPTwkK4zh3yvE2wnyU7tw3yp-8QImpyXt-OCm0jIvV6q-XKGZ0ojPAJaW-KkXAIXtzUGraX5vaqt3HqWKnc--xBuYcoCQScWveeOODAzw2GG~gxodFEwASq3Nlu9ORcmvnrDrNyNaIlVbyB6wSqGYcIktDeqLoICALroR4Jb5FBoMJAAfFNwE0xmOmac1wPVVUy8lWtOER1bocSAeSI8Z0LNNTsm7Z-vhrl8~KPTYRA4sWwQavoz396umjq0fKQBe3vqrFIgELQkCKejsL4iuEjaOrGkaU5p4KZ7MqtPLAg__",fit: BoxFit.contain,),
-
+                          borderRadius: BorderRadius.circular(30),
+                          border: Border.all(color: Colors.white, width: 3),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Image.network(
+                            "https://s3-alpha-sig.figma.com/img/277c/3b91/3d752ff5fbbd893dbe4a3ce5d7e55015?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NOA0BT9Y8F6C5upq4XBJfmdqYsvQhYWLZe4vBS6iSnq6qGtnwPfGaQo77hbMTcW1p0gpeRCJrb88b1v2dg8VN0DWZ-QZyhFTNWlV12wBStHowkO9yeriiXU0lOP5a~PN6DlwQfspGReKFXrCJtgnBITLDZLGraD270jS4LPOhpjrY8Hi2JWhdAEMQ0L380ZidHBS0tO8RyYF4fjvSgaGEGksoT~WEW8HSmvRvlIBNvw0N654zt3q1md1Gl4vpVFrmh4~uejXhWG3pDc6G9~4wyi6m8XsalLb~ySgDGYUfNxDusjC45MFqgAFVOM64h8g45Sbj~atyzk6zLAbwA7uVg__",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
-                      Column(children: [
-                        Text("Life Kindergarten",style: TextStyle(fontWeight: FontWeight.w700,fontSize: 14),),
-                        Text("Today, 3 minutes ago",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color: Color(0xFF8B97A3)),)
-                      ],
+                      const Column(
+                        children: [
+                          Text(
+                            "Life Kindergarten",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 14),
+                          ),
+                          Text(
+                            "Today, 3 minutes ago",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12,
+                                color: Color(0xFF8B97A3)),
+                          )
+                        ],
                       )
                     ],
-                  )
-                  ,Text("Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖")
-                  ,Container(
-                     decoration: BoxDecoration(
+                  ),
+                  const Text(
+                      "Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖"),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
-                 
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                    ),
                     width: 295,
                     height: 107,
-                    child: Image.network("https://parentinghub.org/wp-content/uploads/2019/11/AdobeStock_213765664-1024x683.jpeg",fit: BoxFit.cover,))
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network(
+                        "https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            const SizedBox(
+              height: 16,
+            ),
             Container(
-               decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: const Color.fromARGB(255, 255, 255, 255),
+              ),
               child: Column(
                 children: [
                   Row(
@@ -345,35 +396,65 @@ class _MyAppState extends State<MyApp> {
                         height: 46,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30),
-                            border: Border.all(color: Colors.white,width: 3)),
-                            child: Image.network("https://s3-alpha-sig.figma.com/img/277c/3b91/3d752ff5fbbd893dbe4a3ce5d7e55015?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p2a7oNiidqwibYecb6UBxkTTZw54fe0guv~vWoFk8hFgPTwkK4zh3yvE2wnyU7tw3yp-8QImpyXt-OCm0jIvV6q-XKGZ0ojPAJaW-KkXAIXtzUGraX5vaqt3HqWKnc--xBuYcoCQScWveeOODAzw2GG~gxodFEwASq3Nlu9ORcmvnrDrNyNaIlVbyB6wSqGYcIktDeqLoICALroR4Jb5FBoMJAAfFNwE0xmOmac1wPVVUy8lWtOER1bocSAeSI8Z0LNNTsm7Z-vhrl8~KPTYRA4sWwQavoz396umjq0fKQBe3vqrFIgELQkCKejsL4iuEjaOrGkaU5p4KZ7MqtPLAg__",fit: BoxFit.contain,),
-
+                            border: Border.all(color: Colors.white, width: 3)),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Image.network(
+                            "https://s3-alpha-sig.figma.com/img/277c/3b91/3d752ff5fbbd893dbe4a3ce5d7e55015?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NOA0BT9Y8F6C5upq4XBJfmdqYsvQhYWLZe4vBS6iSnq6qGtnwPfGaQo77hbMTcW1p0gpeRCJrb88b1v2dg8VN0DWZ-QZyhFTNWlV12wBStHowkO9yeriiXU0lOP5a~PN6DlwQfspGReKFXrCJtgnBITLDZLGraD270jS4LPOhpjrY8Hi2JWhdAEMQ0L380ZidHBS0tO8RyYF4fjvSgaGEGksoT~WEW8HSmvRvlIBNvw0N654zt3q1md1Gl4vpVFrmh4~uejXhWG3pDc6G9~4wyi6m8XsalLb~ySgDGYUfNxDusjC45MFqgAFVOM64h8g45Sbj~atyzk6zLAbwA7uVg__",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
-                      Column(children: [
-                        Text("Life Kindergarten",style: TextStyle(fontWeight: FontWeight.w700,fontSize: 14),),
-                        Text("Today, 3 minutes ago",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color: Color(0xFF8B97A3)),)
-                      ],
+                      const Column(
+                        children: [
+                          Text(
+                            "Life Kindergarten",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 14),
+                          ),
+                          Text(
+                            "Today, 3 minutes ago",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12,
+                                color: Color(0xFF8B97A3)),
+                          )
+                        ],
                       )
                     ],
-                  )
-                  ,Text("Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖")
-                  ,Container(
-                     decoration: BoxDecoration(
+                  ),
+                  const Text(
+                      "Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖"),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
-                 
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                    ),
                     width: 295,
                     height: 107,
-                    child: Image.network("https://parentinghub.org/wp-content/uploads/2019/11/AdobeStock_213765664-1024x683.jpeg",fit: BoxFit.cover,))
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network(
+                        "https://img.freepik.com/free-photo/children-playing-grass_1098-504.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 16,),
-
+            const SizedBox(
+              height: 16,
+            ),
             Container(
-               decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromARGB(129, 230, 226, 226)),
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: const Color.fromARGB(255, 255, 255, 255),
+              ),
               child: Column(
                 children: [
                   Row(
@@ -383,21 +464,43 @@ class _MyAppState extends State<MyApp> {
                         height: 46,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30),
-                            border: Border.all(color: Colors.white,width: 3)),
-                            child: Image.network("https://s3-alpha-sig.figma.com/img/a546/f567/d38b56501ceb5caec0b219bfff3ea819?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gE8d0lgY5EXlP2kbFPMt3yqPeik0lpW~WccrjEJadaNsKo64z8BNmv5jA2J7-UqBvmyYuQPkd36w1KaDMrN1q2u0bJsaTUrV1TwEQBVmUn9fiPWIClxeQPnk7z8sUFQWa7Q~R3RVx18PITv2Y8hfBJw9VBFt23zROdKSbeY64cFAqLuQTUoZtnBFGlZCofqQuJ0JbfSz-qlp1FOHLgQAwx0J9xNl~M7oOOctXBfESGbULk6J6NfP~MQ3qMmO5mfKLZiNZqx2-KeUjaKarsBQlpFVnjLpN3QkLR8fZnVDbXaGBCa6Hoe~Fr5BS865DS-oOoVf4w8PwYzFIQ-eItSr2g__",fit: BoxFit.contain,),
-
+                            border: Border.all(color: Colors.white, width: 3)),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Image.network(
+                            "https://s3-alpha-sig.figma.com/img/a546/f567/d38b56501ceb5caec0b219bfff3ea819?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XhrFRr4TtuOIwPBR7mNeZaA0zpzrFZywX~i7S-DBgic4Tb6t7zJsRH0OZcb7sOlzBXmP4fP8Gt2nDbeQB5oV4Ghy2IcgHpssR2Nj~WG5oalShGzxseiFN0zbgjHK2DlHtgGLLJb0h~9a2FSlNOHdNka-DlVKN5K0uX79wIeFrKrN2uPaHZg161tXjYejiwiE1GyN5OAThd1LbwH1NiGuwat3lBue5EiCtWch3m-c~oy-jSC~laXB8ZjerdzZtt~gAhfQfJUfkNy5N7quDJRtjGlfK9h17-6oqIBC27fzGFgBS6grWfEgzMiqcmA8QIH6AfsVMW9jwwfEF16xP~k5Xw__",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
-                      Column(children: [
-                        Text("Life Kindergarten",style: TextStyle(fontWeight: FontWeight.w700,fontSize: 14),),
-                        Text("Today, 3 minutes ago",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color: Color(0xFF8B97A3)),)
-                      ],
+                      const Column(
+                        children: [
+                          Text(
+                            "Life Kindergarten",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 14),
+                          ),
+                          Text(
+                            "Today, 3 minutes ago",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12,
+                                color: Color(0xFF8B97A3)),
+                          )
+                        ],
                       )
                     ],
-                  )
-                  ,Text("Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖")
-                  
+                  ),
+                  const Text(
+                      "Today we celebrated the new generations at Life Nursery and wish you a happy new year! 💖"),
+                  const SizedBox(
+                    height: 5,
+                  ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 100,
             )
           ],
         ),
